@@ -29,10 +29,16 @@
 
     &__bottom {
         padding: 10rem 0;
+
         &--image {
             height: 60rem;
             object-fit: cover;
-            width: min(1650px, 100% - 60px);
+            width: min(1400px + ((100% - 1400px) / 2), 100% - 20px);
+            margin-right: auto;
+
+            @media (max-width: $bp-sm) {
+                height: 20rem;
+            }
         }
     }
 }

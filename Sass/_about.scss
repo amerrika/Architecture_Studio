@@ -1,0 +1,15 @@
+.about {
+    &__wrapper {
+        padding: 5rem 0;
+
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: repeat(3, 1fr);
+
+        &--text {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+}
