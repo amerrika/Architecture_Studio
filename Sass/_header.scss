@@ -1,0 +1,87 @@
+.header {
+    padding: 5rem 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: $bp-sm) {
+            display: none;
+        }
+
+        // Mobile version
+        &--mobile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (min-width: $bp-sm) {
+                display: none;
+            }
+        }
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        font-weight: $fw-600;
+
+        &--icon {
+            height: 30px;
+            width: 30px;
+        }
+    }
+}
+
+.main-nav {
+    & ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+    
+        & a {
+            color: $clr-accent-100;
+            font-weight: $fw-600;
+        }
+    }
+
+    &-mobile {
+        display: none;
+        margin-top: 2rem;
+        padding: 2rem 0;
+        border-radius: 1rem;
+        border: 1px solid $clr-accent-100;
+
+        & ul {
+            display: grid;
+            gap: 3rem;
+            justify-content: center;
+        }
+
+        & a {
+            color: $clr-accent-100;
+            text-transform: uppercase;
+            font-weight: $fw-600;
+        }
+    }
+}
+
+.logo {
+    text-transform: uppercase;
+    font-weight: $fw-700;
+    font-size: 2rem;
+    
+    // To better center the logo; we set flex-grow to 2 to the logo div and use translateX for span inside logo div
+    @media (min-width: $bp-md) {
+        flex-grow: 2;
+        display: flex;
+        justify-content: center;
+    
+        & span {
+            transform: translateX(-50%);
+        }
+    }
+}
