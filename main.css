@@ -119,13 +119,13 @@ body {
   opacity: 0.8;
 }
 
-.btn-toggle {
+.btn--toggle {
   cursor: pointer;
   background-color: transparent;
   border: none;
   transition: all 0.2s ease;
 }
-.btn-toggle:hover {
+.btn--toggle:hover {
   transform: scale(1.1);
 }
 
@@ -180,7 +180,6 @@ body {
   color: #000000;
 }
 .main-nav-mobile {
-  display: none;
   margin-top: 2rem;
   padding: 2rem 0;
   border-radius: 1rem;
