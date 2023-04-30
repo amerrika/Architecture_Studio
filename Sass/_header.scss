@@ -45,6 +45,13 @@
         & a {
             color: $clr-accent-100;
             font-weight: $fw-600;
+            padding: 1rem;
+            transition: all .2s;
+
+            &:hover {
+                background-color: $clr-accent-100;
+                color: $clr-accent-900;
+            }
         }
     }
 

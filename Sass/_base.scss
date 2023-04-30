@@ -89,9 +89,11 @@ body {
 }
 
 .heading-primary {
-  font-size: 3.5rem;
+  font-size: 10rem;
   font-weight: $fw-700;
   color: $clr-accent-100;
+  line-height: 1.2;
+  text-transform: uppercase;
 
   @media screen and (max-width: 576px) {
     & {

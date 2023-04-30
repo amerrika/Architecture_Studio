@@ -1,0 +1,27 @@
+.hero {
+    padding: 5rem 0;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+        &--extra {
+            & div:last-child {
+                padding-top: 1rem;
+                font-size: 2.5rem;
+                font-weight: $fw-500;
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 10rem 0;
+        &--image {
+            height: 60rem;
+            object-fit: cover;
+            width: min(1650px, 100% - 60px);
+        }
+    }
+}
+
+// SKONTATI BOLJE ZA SLIKU

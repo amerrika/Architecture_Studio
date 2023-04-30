@@ -68,9 +68,11 @@ body {
 }
 
 .heading-primary {
-  font-size: 3.5rem;
+  font-size: 10rem;
   font-weight: 700;
   color: #ffffff;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 576px) {
   .heading-primary {
@@ -165,6 +167,12 @@ body {
 .main-nav ul a {
   color: #ffffff;
   font-weight: 600;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+.main-nav ul a:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 .main-nav-mobile {
   display: none;
@@ -237,6 +245,26 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+.hero {
+  padding: 5rem 0;
+}
+.hero__top {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__top--extra div:last-child {
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.hero__bottom {
+  padding: 10rem 0;
+}
+.hero__bottom--image {
+  height: 60rem;
+  object-fit: cover;
+  width: min(1650px, 100% - 60px);
 }
 
 /*# sourceMappingURL=main.css.map */
