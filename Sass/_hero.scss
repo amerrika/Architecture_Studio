@@ -8,8 +8,21 @@
         &--extra {
             & div:last-child {
                 padding-top: 1rem;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 font-weight: $fw-500;
+
+                @media (min-width: $bp-sm){
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        @media (max-width: $bp-sm) {
+            flex-direction: column;
+            gap: 3rem;
+
+            & div:last-child {
+                align-self: flex-end;
             }
         }
     }
@@ -23,5 +36,3 @@
         }
     }
 }
-
-// SKONTATI BOLJE ZA SLIKU
