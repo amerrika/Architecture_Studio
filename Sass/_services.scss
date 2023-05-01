@@ -1,0 +1,22 @@
+.service__box {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    font-size: 2.5rem;
+    font-weight: $fw-600;
+
+    & img {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+.services {
+    &__wrapper {
+        padding: 5rem 0;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}

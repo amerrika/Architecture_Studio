@@ -430,4 +430,23 @@ body {
   }
 }
 
+.service__box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.service__box img {
+  height: 48px;
+  width: 48px;
+}
+
+.services__wrapper {
+  padding: 5rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
 /*# sourceMappingURL=main.css.map */
