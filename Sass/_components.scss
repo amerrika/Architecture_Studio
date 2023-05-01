@@ -24,6 +24,14 @@
     }
 }
 
+.btn--back,
+.btn--next {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+
 .section__intro {
     width: min(1400px + ((100% - 1400px) / 2), 100% - 20px);
     margin-left: auto;
