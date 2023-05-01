@@ -1,7 +1,9 @@
 navigation buttons gap (minmax) - da bude manji gap kad se smanjuje rezolucija
+
 tablet verziju poboljšati (mozda izbaciti contact, logo lijevo, navigacija desno)
-pročitati artikle o responsive images:
+
+pročitati artikle o responsive images i bolje podesiti images:
 https://cloudfour.com/thinks/responsive-images-101-part-9-image-breakpoints/
-https://medium.com/hceverything/applying-srcset-choosing-the-right-sizes-for-responsive-images-at-different-breakpoints-a0433450a4a3
-https://www.freecodecamp.org/news/css-responsive-image-tutorial/
-mobilna verzija za about sekciju
+pročitati o responsive font-sizes, typography
+
+

@@ -33,9 +33,13 @@
         &--image {
             height: 60rem;
             object-fit: cover;
+            // object-position: top;
             width: min(1400px + ((100% - 1400px) / 2), 100% - 20px);
             margin-right: auto;
 
+            @media (max-width: $bp-md) {
+                height: 40rem;
+            }
             @media (max-width: $bp-sm) {
                 height: 20rem;
             }

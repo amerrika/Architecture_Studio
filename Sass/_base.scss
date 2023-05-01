@@ -74,7 +74,7 @@ $bp-sm: 576px;
 /* General styling */
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: $ff-primary;
   font-weight: $fw-400;
   line-height: 1.5;
@@ -108,11 +108,13 @@ body {
   color: $clr-accent-100;
   text-transform: uppercase;
   line-height: 1.1;
+  @media (max-width: $bp-sm){
+    font-size: 3rem;
+  }
 }
 .heading-tertiary {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: $fw-500;
-  color: $clr-accent-100;
 }
 .display-block { 
   display: block;
