@@ -1,0 +1,36 @@
+.why {
+    padding: 15rem 0;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10rem;
+
+    &__image {
+        height: 50rem;
+        & img {
+            object-fit: cover;
+        }
+    } 
+
+    &__content {
+        display: grid;
+        &--wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 5rem;
+        }
+    }
+
+    &__box {
+        display: grid;
+
+        &--heading {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: $fw-700;
+        }
+    }
+
+
+}

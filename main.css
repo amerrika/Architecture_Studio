@@ -449,4 +449,44 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.why {
+  padding: 15rem 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10rem;
+}
+.why__image {
+  height: 50rem;
+}
+.why__image img {
+  object-fit: cover;
+}
+.why__content {
+  display: grid;
+}
+.why__content--wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5rem;
+}
+.why__box {
+  display: grid;
+}
+.why__box--heading {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.partners__logo {
+  max-width: 25rem;
+}
+
 /*# sourceMappingURL=main.css.map */
