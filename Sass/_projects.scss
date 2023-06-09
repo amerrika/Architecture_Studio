@@ -1,16 +1,24 @@
 .projects {
-    background-color: #f8f8f6;
+    background-color: #fff;
 
     &__wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 10rem 0;
+        padding: 5rem 0;
+    }
 
-        // Column Left
-        &--col-1,
-        &--col-2 {
-            display: grid;
-            gap: 5rem;
+    &__top {
+        display: flex;
+        margin-bottom: 3rem;
+
+        > * {
+            flex-basis: 50%;
+        }
+
+        // Buttons
+        div:last-child {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 2rem;
         }
     }
 }
@@ -18,7 +26,7 @@
 
 .project-box {
     height: 50rem;
-    width: 55rem;
+    width: 60rem;
     box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.3);
 
     img {
@@ -41,5 +49,28 @@
         font-size: 2rem;
         margin-top: 20px;
         line-height: 1.5;
+    }
+}
+
+.slider {
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.pagination {
+    padding: 2rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    &__button {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: none;
+        background-color: #9db7a5;
     }
 }

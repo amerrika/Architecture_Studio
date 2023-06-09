@@ -17,6 +17,7 @@ html {
   font-size: 62.5%; // 1rem = 10px
   scroll-behavior: smooth;
 }
+
 img {
   display: block;
   width: 100%;
@@ -106,7 +107,7 @@ body {
   font-size: 4rem;
   font-weight: $fw-600;
   color: $clr-accent-100;
-  line-height: 1.1;
+  line-height: 1.5;
   @media (max-width: $bp-sm){
     font-size: 3rem;
   }
@@ -143,4 +144,7 @@ body {
 }
 .clr-white {
   color: #fff;
+}
+.clr-gray-dark {
+  color: #9db7a5;
 }

@@ -27,14 +27,14 @@
 .btn--back,
 .btn--next {
     cursor: pointer;
+    background: none;
     border: none;
-    background-color: transparent;
-    height: 60px;
-    width: 60px;
-    transition: all .2s ease;
+    height: 80px;
+    width: 80px;
+    transition: all .2s;
 
     &:hover {
-        transform: scale(1.05);
+        transform: rotate(360deg);
     }
 
     @media (max-width: $bp-sm){
@@ -43,23 +43,32 @@
     }
 }
 
+.btn--back {
+    left: -5%;
+}
+.btn--next {
+    right: -5%;
+}
 
 .section__intro {
     width: min(1400px + ((100% - 1400px) / 2), 100% - 20px);
     margin-left: auto;
-    display: flex;
-    gap: 4rem;
+    color: black;
 
-    & div:first-child {
-        font-size: 4rem;
-        align-self: flex-start;
-        transform: translateY(-10%);
-    }
-
-    & div:last-child {
-        flex-grow: 2;
+    div {
         padding-top: 1rem;
-        border-top: 1px solid white;
-        align-self: flex-end;
+        border-top: 1px solid #9db7a5;
     }
+}
+
+.img-owner {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.signature {
+    height: 100px;
+    width: 200px;
 }

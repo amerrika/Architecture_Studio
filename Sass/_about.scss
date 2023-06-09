@@ -1,4 +1,9 @@
 .about {
+    
+
+    background-color: $clr-accent-100;
+    color: $clr-accent-900;
+    color: #9db7a5;
     &__wrapper {
         padding: 5rem 0;
 
@@ -19,7 +24,7 @@
             grid-template-columns: repeat(3, 1fr);
         }
 
-        &--text {
+        &--content {
             display: flex;
             flex-direction: column;
             gap: 2rem;
@@ -27,5 +32,11 @@
                 gap: 3rem;
             }
         }
+    }
+
+    // Signature & owner profile picture
+    &__extra {
+        display: flex;
+        align-items: center;
     }
 }
