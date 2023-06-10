@@ -1,9 +1,9 @@
 .about {
-    
-
     background-color: $clr-accent-100;
     color: $clr-accent-900;
     color: #9db7a5;
+    padding: 10rem 0;
+
     &__wrapper {
         padding: 5rem 0;
 
@@ -22,21 +22,42 @@
         // za vece ekrane naslov i tekst u tri kolone podjednako
         @media(min-width: $bp-md){
             grid-template-columns: repeat(3, 1fr);
-        }
+        }       
+    }
 
-        &--content {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            @media (min-width: $bp-sm){
-                gap: 3rem;
+    // Kolone
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        // zadnja kolona sa slikom
+        &:last-child {
+            position: relative;
+            img {
+                max-height: 500px;
+                object-fit: cover;
+                z-index: 1;
+                box-shadow:  -1px -1px 3px 0px rgba(0,0,0,0.6);
             }
         }
     }
+
+    
 
     // Signature & owner profile picture
     &__extra {
         display: flex;
         align-items: center;
+    }
+
+    &__box {
+        width: 100%;
+        height: 100%;
+        background-color: #9db7a5;;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 0;
     }
 }

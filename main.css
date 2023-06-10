@@ -205,10 +205,11 @@ body {
 }
 
 .img-owner {
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   border-radius: 50%;
   object-fit: cover;
+  border: 5px solid #9db7a5;
 }
 
 .signature {
@@ -388,6 +389,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   color: #9db7a5;
+  padding: 10rem 0;
 }
 .about__wrapper {
   padding: 5rem 0;
@@ -409,19 +411,32 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.about__wrapper--content {
+.about__column {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: space-between;
 }
-@media (min-width: 576px) {
-  .about__wrapper--content {
-    gap: 3rem;
-  }
+.about__column:last-child {
+  position: relative;
+}
+.about__column:last-child img {
+  max-height: 500px;
+  object-fit: cover;
+  z-index: 1;
+  box-shadow: -1px -1px 3px 0px rgba(0, 0, 0, 0.6);
 }
 .about__extra {
   display: flex;
   align-items: center;
+}
+.about__box {
+  width: 100%;
+  height: 100%;
+  background-color: #9db7a5;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 0;
 }
 
 .projects {

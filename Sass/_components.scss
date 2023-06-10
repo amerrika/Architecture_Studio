@@ -62,10 +62,11 @@
 }
 
 .img-owner {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
     object-fit: cover;
+    border: 5px solid #9db7a5;
 }
 
 .signature {
