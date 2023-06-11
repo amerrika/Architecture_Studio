@@ -80,8 +80,8 @@ body {
   font-weight: $fw-400;
   line-height: 1.5;
 
-  background-color: $clr-accent-900;
-  color: $clr-accent-100;
+  background-color: $clr-accent-100;
+  color: $clr-accent-900;
 }
 
 .container {
@@ -115,6 +115,7 @@ body {
 .heading-tertiary {
   font-size: 1.8rem;
   font-weight: $fw-500;
+  color: $clr-accent-900;
 }
 .display-block { 
   display: block;
