@@ -1,22 +1,45 @@
 .service__box {
+    max-width: 50rem;
     display: flex;
-    align-items: center;
-    gap: 2rem;
 
-    font-size: 2.5rem;
-    font-weight: $fw-600;
+    &--icon {
+        padding: 10px;
+    }
 
-    & img {
+    &--content {
+        padding-top: 1rem;
+        p {
+            font-size: 1.3rem;
+            color: #929292;
+            max-width: 40ch;
+        }
+    }
+
+    img {
         height: 48px;
         width: 48px;
+    }
+
+    h3 {
+        font-weight: 500;
+        margin-bottom: 5px;
     }
 }
 
 .services {
+    background-color: $clr-accent-100;
+    color: black;
+
+    &__heading {
+        text-align: center;
+    }
+
+
     &__wrapper {
         padding: 5rem 0;
         display: grid;
         gap: 1rem;
-        grid-template-columns: 1fr 1fr;
+        row-gap: 5rem;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
