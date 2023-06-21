@@ -1,14 +1,21 @@
-.btn {
+.btn__link {
     cursor: pointer;
     display: inline-block;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    font-weight: $fw-500;
-    transition: all .2s;
+    color: $clr-accent-100;
+    font-weight: $fw-600;
+    text-transform: uppercase;
+    transition: all .1s linear;
+    letter-spacing: 1px;
 
     &:hover {
-        opacity: .8;
+        color: $clr-accent-900;
+    }
+
+    &--highlight {
+        @extend .btn__link;
+        border: 2px solid $clr-accent-100;
     }
 }
 
@@ -18,9 +25,14 @@
     background-color: transparent;
     border: none;
     transition: all .2s ease;
+    height: 60px;
 
     &:hover {
         transform: scale(1.1);
+    }
+
+    @media(min-width: $bp-md){
+        display: none;
     }
 }
 
@@ -53,11 +65,36 @@
 .section__intro {
     width: min(1400px + ((100% - 1400px) / 2), 100% - 20px);
     margin-left: auto;
-    color: black;
+    color: #9db7a5;
+    text-transform: uppercase;
 
     div {
         padding-top: 1rem;
-        border-top: 1px solid #9db7a5;
+        border-top: 3px solid #9db7a5;
+    }
+}
+
+.section__intro--center {
+    text-transform: uppercase;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #9db7a5;
+
+    div:nth-child(2){
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    div:first-child {
+        background-color: #9db7a5;
+        width: 50px;
+        height: 3px;
+    }div:last-child {
+        background-color: #9db7a5;
+        width: 50px;
+        height: 3px;
     }
 }
 
@@ -73,3 +110,16 @@
     height: 100px;
     width: 200px;
 }
+
+.btn--extra {
+    display: block;
+    padding: .5rem 1rem;
+    text-align: center;
+    color: black;
+
+    @media(min-width: $bp-sm){
+        border: 2px solid $clr-accent-100;
+    }  
+}
+
+  

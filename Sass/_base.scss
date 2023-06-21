@@ -62,6 +62,8 @@ li {
 $clr-accent-100: #ffffff;
 $clr-accent-900: #000000;
 
+$clr-primary: #9db7a5;
+
 $ff-primary: "Open Sans", sans-serif;
 
 $fw-400: 400;
@@ -90,21 +92,21 @@ body {
 }
 
 .heading-primary {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: $fw-700;
-  color: $clr-accent-100;
+  color: $clr-accent-900;
   line-height: 1.2;
   text-transform: uppercase;
 
-  @media (min-width: 576px) {
-    font-size: 6rem;
+  @media (min-width: $bp-sm) {
+    font-size: 4rem;
   }
   @media (min-width: $bp-md){
-    font-size: 10rem;
+    font-size: 6rem;
   }
 }
 .heading-secondary {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: $fw-600;
   color: $clr-accent-900;
   line-height: 1.5;

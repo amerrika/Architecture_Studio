@@ -1,9 +1,7 @@
-.hero {
+/* .hero {
     padding: 5rem 0;
 
     &__top {
-        display: flex;
-        justify-content: space-between;
 
         &--extra {
             & div:last-child {
@@ -44,5 +42,63 @@
                 height: 20rem;
             }
         }
+    }
+} */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 89vh;
+    // LEFT
+    &__left {
+        background-color: $clr-primary;
+        padding-top: 5rem;
+
+        &--content {
+            width: min(1400px / 2, 100% - 20px);
+            margin-left: auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            p {
+                font-size: 1.8rem;
+                max-width: 50ch;
+                color: rgba(0, 0, 0, 0.733);
+            }
+        }
+    }
+
+    // RIGHT
+    &__right {
+        width: min(1400px / 2, 100% - 20px);
+        margin-right: auto;
+        padding-top: 2rem;
+
+        // Icons
+        &--icons {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        // Box
+        &--box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+
+    // IMAGE
+    &__image {
+        height: 90%;
+        width: 100%;
     }
 }

@@ -13,67 +13,63 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">References</a></li>
-                    </ul>
-                </nav>
-                <div class="logo">
-                    <span>Mansion</span>
-                </div>
-                <div class="header__phone bounce">
-                    <span>+677 4555 5777 4577</span>
-                    <img class="header__phone--icon" src="images/icons/icon-phone.png" alt="Phone icon">
-                </div>
-            </div>
-            <!-- header__wrapper for mobile -->
-            <div class="header__wrapper--mobile">
-                <div class="logo">
-                    <span>Mansion</span>
-                </div>
-                <button class="btn--toggle">
-                    <img src="images/icons/icon-hamburger.png" alt="hamburger menu">
-                </button>
-            </div>
-            <!-- main-nav for mobile-->
-            <nav class="main-nav-mobile display-none">
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">References</a></li>
-                </ul>
-            </nav>
+        <div class="nav-header">
+            <img class="logo" src="images/logo.svg" alt="">
+            <button class="btn--toggle"><img src="images/icons/icon-hamburger.svg" alt=""></button>
         </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a class="btn__link" href="#about">O nama</a></li>
+                <li><a class="btn__link" href="#services">Usluge</a></li>
+                <li><a class="btn__link" href="#">Projekti</a></li>
+                <li><a class="btn__link" href="#">Reference</a></li>
+                <li><a class="btn__link--highlight" href="#">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- HERO -->
-    <section class="hero">
-        <div class="hero__top container">
-            <div class="hero__top--heading">
-                <h1 class="heading-primary"><span class="display-block">Modern</span> architecture</h1>
-            </div>
-            <div class="hero__top--extra">
-                <div>
-                    <p>- Since 2021</p>
-                </div>
-                <div>
-                    <p>Architecture.</p>
-                    <p>Design.</p>
-                    <p>Planning.</p>
-                </div>
+    <section class="hero display-none">
+        <div class="hero__left">
+            <div class="hero__left--content">
+                <h1 class="heading-primary">Moderna arhitektura</h1>
+                    <p>Nudimo najbolja rješenja kod izgradnje novih objekata, preuređivanja postojećih, legalizacije ili prodaju stanova. <br>
+                        Podrška smo od ideje do realizacije!
+                    </p>
+                    <a class="btn" href="">Sve usluge</a>
+                    <!-- <div class="hero__right--icons">
+                        <div class="hero__right--box">
+                            <img src="images/icons/icon-stambeni.png" alt="">
+                            <span>Stambeni objekti</span>
+                        </div>
+                        <div class="hero__right--box">
+                            <img src="images/icons/icon-poslovno-stambeni.png" alt="">
+                            <span>Poslovno stambeni objekti</span>
+                        </div>
+                        <div class="hero__right--box">
+                            <img src="images/icons/icon-industrijski.png" alt="">
+                            <span>Industrijski objekti</span>
+                        </div>
+                        <div class="hero__right--box">
+                            <img src="images/icons/icon-niskogradnja.png" alt="">
+                            <span>Niskogradnja</span>
+                        </div>
+                    </div> -->
             </div>
         </div>
-        <div class="hero__bottom">
-            <img class="hero__bottom--image" src="images/image-hero.jpg" alt="">
+        <div class="hero__right">
+            <div class="hero__right--content">
+                <img class="hero__image" src="images/image-hero.png" alt="">
+            </div>
         </div>
+
     </section>
+    
     <!-- ABOUT -->
-    <section class="about">
+    <section id="about" class="about">
+        <!-- <div class="section__intro--left container">
+            <div></div> 
+            <div><h3>O nama</h3></div>
+        </div> -->
         <div class="section__intro">
             <div>
                 <h3 class="heading-tertiary">O nama</h3>
@@ -113,14 +109,14 @@
         </div>
     </section>
         <!-- SERVICES -->
-        <section class="services">
-            <div class="section__intro">
-                <div>
-                    <h3 class="heading-tertiary">Naše usluge</h3>
-                </div>
+        <section id="services" class="services">
+            <div class="section__intro--center container">
+                <div></div> 
+                <div><h3>Usluge</h3></div>
+                <div></div>
             </div>
             <div class="services__heading container">
-                <h2 class="heading-secondary">Sve što trebate neki heading</h2>
+                <h2 class="heading-secondary">Nudimo kvalitetna rješenja</h2>
             </div>
             <div class="services__wrapper container">
                 <div class="service__box">
@@ -245,26 +241,19 @@
                 <div class="pagination__button"></div>
                 <div class="pagination__button"></div>
             </div>
-            <!-- <div class="project-box">
-                    <img src="images/projekti/image-project-2.jpg" alt="">
-                    <div class="project-box__content bg-yellow clr-black">
-                        <span class="project-box--topline">Poslovno stambeni objekt</span>
-                        <p class="project-box__text">Moderan poslovno stambeni objekt</p>
-                    </div>
-                </div> -->
         </div>
 
     </section>
 
      <!-- WHY US -->
-     <section class="why">
-        <div class="section__intro">
-            <div>
-                <h3 class="heading-tertiary">Izaberite nas</h3>
-            </div>
+    <section class="why">
+        <div class="section__intro--center container">
+            <div></div> 
+            <div><h3>Izaberite nas</h3></div>
+            <div></div>
         </div>
         <div class="why__heading container">
-            <h2 class="heading-secondary">Zašto smo pravi izbor ?</h2>
+            <h2 class="heading-secondary">Zašto smo najbolji izbor ?</h2>
         </div>
         <div class="why__wrapper container">
             <div class="why__box">
@@ -292,11 +281,49 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!-- PARTNERS -->
+    <section class="partners container">
+        <div class="partners__heading">
+            <h2 class="heading-secondary">Oni su nam ukazali povjerenje!</h2>
+            <img class="partners__icon" src="images/icons/icon-handshake.png" alt="">
+            <p class="partners__text">Mnogi su u nama prepoznali pouzdanog partnera, zahvaljujući tome ostvarili smo dugogodišnju saradnju sa velikim brojem kompanija sa prostora Unsko-sanskog kantona i šire.</p>
+        </div>
+        <div class="partners__wrapper">
+            <div class="partner">
+                <p>ĐUZELIĆ d.o.o.</p>
+            </div>
+            <div class="partner">
+                <p>DURIĆ-BENZ d.o.o.</p>
+            </div>
+            <div class="partner">
+                <p>SIGNAL-X d.o.o.</p>
+            </div>
+            <div class="partner">
+                <p>GEO PREMJER d.o.o.</p>
+            </div>
+            <div class="partner">
+                <p>BONITET d.o.o.</p>
+            </div>
+            <div class="partner">
+                <p>UNASOFT d.o.o.</p>
+            </div>
+            
+        </div>
 
-     </section>
-    <!-- CONTACT -->
+    </section>
 
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>

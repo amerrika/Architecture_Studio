@@ -1,94 +1,56 @@
 .header {
-    padding: 5rem 0;
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        @media (max-width: $bp-sm) {
-            display: none;
-        }
-
-        // Mobile version
-        &--mobile {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            @media (min-width: $bp-sm) {
-                display: none;
-            }
-        }
-    }
-
-    &__phone {
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-
-        font-weight: $fw-600;
-
-        &--icon {
-            height: 30px;
-            width: 30px;
-        }
+    
+    // Desktop
+    @media (min-width: $bp-md){
+        height: 9rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
     }
 }
 
 .main-nav {
-    & ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 3rem;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s linear;
+    background-color: $clr-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
-        & a {
-            color: $clr-accent-100;
-            font-weight: $fw-600;
-            padding: 1rem;
-            transition: all .2s;
-
-            &:hover {
-                background-color: $clr-accent-100;
-                color: $clr-accent-900;
-            }
-        }
+    // Desktop
+    @media(min-width: $bp-md){
+        height: 100%;
     }
 
-    &-mobile {
-        margin-top: 2rem;
-        padding: 2rem 0;
-        border-radius: 1rem;
-        border: 1px solid $clr-accent-100;
-
-        & ul {
-            display: grid;
-            gap: 3rem;
-            justify-content: center;
-        }
-
-        & a {
-            padding: 1rem;
-            color: $clr-accent-100;
-            text-transform: uppercase;
-            font-weight: $fw-600;
+    & ul {
+        @media (min-width: $bp-md){
+            width: min(700px, 100% - 20px);
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
         }
     }
 }
 
-.logo {
-    text-transform: uppercase;
-    font-weight: $fw-700;
-    font-size: 2rem;
+.nav-header {
     
-    // To better center the logo; we set flex-grow to 2 to the logo div and use translateX for span inside logo div
-    @media (min-width: $bp-md) {
-        flex-grow: 2;
-        display: flex;
-        justify-content: center;
-    
-        & span {
-            transform: translateX(-50%);
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+    @media (min-width: $bp-md){
+        width: min(700px, 100% - 20px);
+        margin-left: auto;
     }
+}
+
+.show-links {
+    height: 22rem;
+}
+
+.logo {
+    max-height: 200px;
+    max-width: 200px;
 }
