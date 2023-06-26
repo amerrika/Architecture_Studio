@@ -52,7 +52,7 @@
             background-position: top;
             position: relative;
 
-            @media (max-width){
+            @media (max-width: $bp-md){
                 height: 400px;
             }
         }
