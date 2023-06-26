@@ -406,12 +406,12 @@ body {
 .hero {
   display: flex;
   flex-direction: column;
-  height: 89vh;
 }
 @media (min-width: 992px) {
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 89vh;
   }
 }
 .hero__left {
@@ -450,6 +450,11 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
+}
+@media (max-width) {
+  .hero__right--content {
+    height: 400px;
+  }
 }
 .hero__right--box {
   background-color: rgba(157, 183, 165, 0.937254902);
