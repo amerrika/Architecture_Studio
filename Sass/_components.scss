@@ -1,26 +1,49 @@
 .btn__link {
     cursor: pointer;
     display: inline-block;
-    padding: 10px 20px;
     border: none;
     color: $clr-accent-100;
+    font-size: 1.8rem;
     font-weight: $fw-600;
-    text-transform: uppercase;
-    transition: all .1s linear;
-    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    width: fit-content;
 
+    // Hover effect for desktop
     &:hover {
-        color: $clr-accent-900;
+        @media(min-width: $bp-md)
+        {
+            color: $clr-accent-900;
+        }
     }
 
-    &--highlight {
+    &--highlight-white {
         @extend .btn__link;
+        border-radius: 5px;
+        padding: 5px 30px;
         border: 2px solid $clr-accent-100;
+        color: $clr-accent-100;
+    }
+
+    &--highlight-dark {
+        @extend .btn__link;
+        border-radius: 5px;
+        padding: 5px 30px;
+        border: 2px solid $clr-secondary;
+        color: $clr-accent-900;
+
+        &:hover {
+            color: $clr-accent-100;
+            border: 2px solid $clr-accent-900;
+        }
     }
 }
 
 
 .btn--toggle {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -30,7 +53,7 @@
     &:hover {
         transform: scale(1.1);
     }
-
+    
     @media(min-width: $bp-md){
         display: none;
     }
@@ -65,34 +88,28 @@
 .section__intro {
     width: min(1400px + ((100% - 1400px) / 2), 100% - 20px);
     margin-left: auto;
-    color: #9db7a5;
-    text-transform: uppercase;
 
     div {
         padding-top: 1rem;
-        border-top: 3px solid #9db7a5;
+        border-top: 3px solid $clr-primary;
     }
 }
 
 .section__intro--center {
-    text-transform: uppercase;
     padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    color: #9db7a5;
+    
 
-    div:nth-child(2){
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
     div:first-child {
-        background-color: #9db7a5;
+        background-color: $clr-primary;
         width: 50px;
         height: 3px;
-    }div:last-child {
-        background-color: #9db7a5;
+    }
+    div:last-child {
+        background-color: $clr-primary;
         width: 50px;
         height: 3px;
     }
@@ -103,7 +120,7 @@
     width: 180px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #9db7a5;
+    border: 5px solid $clr-primary;
 }
 
 .signature {
@@ -121,5 +138,3 @@
         border: 2px solid $clr-accent-100;
     }  
 }
-
-  

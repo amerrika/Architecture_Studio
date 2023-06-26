@@ -1,5 +1,4 @@
 .header {
-    
     // Desktop
     @media (min-width: $bp-md){
         height: 9rem;
@@ -10,20 +9,22 @@
 }
 
 .main-nav {
-    height: 0;
-    overflow: hidden;
+    // Desktop
     transition: all .3s linear;
     background-color: $clr-primary;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    display: flex; // using flex on main-nav only so I can align items center;
     align-items: center;
     
-    // Desktop
-    @media(min-width: $bp-md){
-        height: 100%;
+    
+    // Tablet
+    @media(max-width: $bp-md){
+        height: 0;
+        overflow: hidden;
     }
 
     & ul {
+        // Desktop
         @media (min-width: $bp-md){
             width: min(700px, 100% - 20px);
             margin-right: auto;
@@ -31,18 +32,32 @@
             align-items: center;
             justify-content: space-around;
         }
+
+        // Mobile
+        @media (max-width: $bp-md) {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
     }
 }
 
 .nav-header {
-    
+    // Mobile & Tablet Layout
     display: flex;
     align-items: center;
     justify-content: space-between; 
 
+    // Desktop (button toggle hidden)
     @media (min-width: $bp-md){
         width: min(700px, 100% - 20px);
         margin-left: auto;
+    }
+
+    // Mobile/Tablet container style
+    @media (max-width: $bp-md){
+        width: min(1400px, 100% - 20px);
+        margin-inline: auto;
     }
 }
 
