@@ -92,7 +92,7 @@ body {
 }
 
 .heading-primary {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 500;
   color: #000000;
   line-height: 1.2;
@@ -428,7 +428,7 @@ body {
 .hero__left--content p {
   font-size: 1.8rem;
   max-width: 50ch;
-  color: rgba(0, 0, 0, 0.733);
+  color: #000000;
 }
 @media (max-width: 992px) {
   .hero__left--content {
@@ -469,6 +469,11 @@ body {
   width: fit-content;
   height: fit-content;
 }
+@media (max-width: 992px) {
+  .hero__right--box {
+    background-color: rgba(157, 183, 165, 0.7137254902);
+  }
+}
 .hero__right--box-icon {
   height: 28px;
   width: 28px;
@@ -477,6 +482,11 @@ body {
   position: absolute;
   right: 0;
   top: 20%;
+}
+@media (max-width: 992px) {
+  .hero__right--box-1 {
+    top: 10%;
+  }
 }
 .hero__right--box-2 {
   position: absolute;
@@ -487,6 +497,11 @@ body {
   position: absolute;
   right: 0;
   top: 40%;
+}
+@media (max-width: 992px) {
+  .hero__right--box-3 {
+    top: 45%;
+  }
 }
 
 .about {

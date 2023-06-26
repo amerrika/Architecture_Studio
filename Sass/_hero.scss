@@ -24,7 +24,7 @@
             p {
                 font-size: 1.8rem;
                 max-width: 50ch;
-                color: rgba(0, 0, 0, 0.733);
+                color: $clr-accent-900;
             }
 
             // left--content styles for mobile/tablet 
@@ -69,6 +69,10 @@
             color: #fff;
             width:fit-content;
             height: fit-content;
+
+            @media(max-width: $bp-md){
+                background-color: #9db7a5b6;
+            }
         
             &-icon {
                 height: 28px;
@@ -79,16 +83,23 @@
                 position: absolute;
                 right: 0;
                 top: 20%;
+                @media(max-width: $bp-md){
+                    top: 10%;
+                }
             }
             &-2 {
                 position: absolute;
                 right: 0;
-                top: 30%;
+                top: 30%;  
             }
+                
             &-3 {
                 position: absolute;
                 right: 0;
                 top: 40%;
+                @media(max-width: $bp-md){
+                    top: 45%;
+                }
             }
         }
     }
