@@ -188,6 +188,18 @@ body {
   border-bottom: 1px solid rgba(100, 111, 121, 0.15);
 }
 
+.border-bottom-sm {
+  @media(max-width: $bp-sm){
+    border-bottom: 1px solid rgba(100, 111, 121, 0.15);
+  }
+}
+
 .border-right {
   border-right: 1px solid rgba(100, 111, 121, 0.15);
+}
+
+.border-right-sm-none {
+  @media(max-width: $bp-sm){
+    border-right: none;
+  }
 }

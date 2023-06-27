@@ -177,8 +177,20 @@ body {
   border-bottom: 1px solid rgba(100, 111, 121, 0.15);
 }
 
+@media (max-width: 576px) {
+  .border-bottom-sm {
+    border-bottom: 1px solid rgba(100, 111, 121, 0.15);
+  }
+}
+
 .border-right {
   border-right: 1px solid rgba(100, 111, 121, 0.15);
+}
+
+@media (max-width: 576px) {
+  .border-right-sm-none {
+    border-right: none;
+  }
 }
 
 .btn__link, .btn__link--highlight-dark, .btn__link--highlight-white {
@@ -759,14 +771,14 @@ body {
   justify-content: center;
 }
 .partner p {
-  color: #000000;
+  color: #646f79;
   font-weight: 600;
   font-size: 1.8rem;
   font-style: italic;
 }
 @media (max-width: 992px) {
   .partner p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 

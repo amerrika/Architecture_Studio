@@ -40,13 +40,13 @@
     justify-content: center;
 
     p {
-        color: $clr-accent-900;
+        color: $clr-secondary;
         font-weight: 600;
         font-size: 1.8rem;
         font-style: italic;
 
         @media (max-width: $bp-md){
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
     }
 }
