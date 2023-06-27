@@ -90,6 +90,8 @@ body {
   color: $clr-accent-900;
 }
 
+/* Utilites */
+
 .container {
   width: min(1400px, 100% - 20px);
   margin-inline: auto;
@@ -176,4 +178,16 @@ body {
 }
 .clr-gray-dark {
   color: #9db7a5;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(100, 111, 121, 0.15);
+}
+
+.border-right {
+  border-right: 1px solid rgba(100, 111, 121, 0.15);
 }
