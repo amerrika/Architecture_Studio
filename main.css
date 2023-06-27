@@ -207,7 +207,7 @@ body {
   .btn__link, .btn__link--highlight-dark, .btn__link--highlight-white {
     color: #000000;
     padding: 1rem 0;
-    border-top: 1px solid #646f79;
+    border-top: 1px solid rgba(100, 111, 121, 0.15);
   }
 }
 @media (min-width: 992px) {

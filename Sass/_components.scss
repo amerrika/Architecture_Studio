@@ -8,11 +8,11 @@
     text-transform: capitalize;
     transition: all .2s linear;
 
-    // Color for mobile/tablet
+    // mobile/tablet styles
     @media (max-width: $bp-md){
         color: $clr-accent-900;
         padding: 1rem 0;
-        border-top: 1px solid $clr-secondary;
+        border-top: 1px solid rgba(100, 111, 121, 0.15);
     }
 
     // Hover effect for desktop
