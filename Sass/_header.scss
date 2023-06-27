@@ -4,8 +4,10 @@
         height: 9rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-       
     }
+
+    // Mobile
+    box-shadow: $shadow-test;
 }
 
 .main-nav {
@@ -21,6 +23,7 @@
     @media(max-width: $bp-md){
         height: 0;
         overflow: hidden;
+        background-color: $clr-accent-100;
     }
 
     & ul {
