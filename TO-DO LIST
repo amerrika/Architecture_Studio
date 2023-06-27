@@ -1,17 +1,2 @@
-navigation buttons gap (minmax) - da bude manji gap kad se smanjuje rezolucija
-
-tablet verziju poboljšati (mozda izbaciti contact, logo lijevo, navigacija desno)
-
-pročitati artikle o responsive images i bolje podesiti images:
-https://cloudfour.com/thinks/responsive-images-101-part-9-image-breakpoints/
-pročitati o responsive font-sizes, typography
-veci razmak izmedju sekcija
-
-
-
-neke ideje za redizajn
-
-- pogledati bolje primjere za gallery/carousel
-- riješiti header
-- dodati logo partnera
-- eksperimentisati sa bojama
+- manji header-logo za mobilnu verziju
+- tablet hero right poboljšati

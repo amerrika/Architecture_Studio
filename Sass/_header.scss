@@ -26,8 +26,6 @@
     & ul {
         // Desktop
         @media (min-width: $bp-md){
-            width: min(700px, 100% - 20px);
-            margin-right: auto;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -47,18 +45,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-
-    // Desktop (button toggle hidden)
-    @media (min-width: $bp-md){
-        width: min(700px, 100% - 20px);
-        margin-left: auto;
-    }
-
-    // Mobile/Tablet container style
-    @media (max-width: $bp-md){
-        width: min(1400px, 100% - 20px);
-        margin-inline: auto;
-    }
 }
 
 .show-links {
