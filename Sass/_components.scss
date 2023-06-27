@@ -17,7 +17,7 @@
 
     // Hover effect for desktop
     &:hover {
-        @media(min-width: $bp-md)
+        @media(hover: hover)
         {
             color: $clr-accent-900;
         }

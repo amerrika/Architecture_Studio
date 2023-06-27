@@ -184,7 +184,7 @@ body {
     border-top: 1px solid #646f79;
   }
 }
-@media (min-width: 992px) {
+@media (hover: hover) {
   .btn__link:hover, .btn__link--highlight-dark:hover, .btn__link--highlight-white:hover {
     color: #000000;
   }
