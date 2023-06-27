@@ -29,7 +29,8 @@ textarea,
 select,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font: inherit;
 }
 
@@ -184,7 +185,7 @@ body {
     border-top: 1px solid #646f79;
   }
 }
-@media (hover: hover) {
+@media (min-width: 992px) {
   .btn__link:hover, .btn__link--highlight-dark:hover, .btn__link--highlight-white:hover {
     color: #000000;
   }
@@ -663,26 +664,48 @@ body {
   padding: 10rem 0;
 }
 .why__heading {
-  padding-top: 5rem;
   text-align: center;
 }
 .why__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 5rem 0;
+  padding: 3rem 0;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+  .why__wrapper {
+    gap: 5rem;
+  }
+}
+.why__text {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  max-width: 60ch;
+}
+@media (max-width: 576px) {
+  .why__text {
+    text-align: left;
+  }
 }
 
 .why__box {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
-.why__box img {
+.why__box--icon img {
   height: 80px;
   width: 80px;
 }
-.why__box p {
-  max-width: 25ch;
+.why__box--heading h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.why__box--content p {
+  font-size: 1.8rem;
+  max-width: 30ch;
 }
 
 .partners__heading {
