@@ -664,7 +664,6 @@ body {
   padding-top: 1rem;
 }
 .service__box--content p {
-  font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.8078431373);
   max-width: 40ch;
 }
