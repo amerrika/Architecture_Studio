@@ -1,0 +1,62 @@
+.footer {
+    padding: 5rem;
+    height: 30rem;
+    background-color: $clr-primary;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+    }
+
+    &__logo {
+        height: 8rem;
+        width: 15rem;
+    }
+
+    &__text {
+        color: $clr-secondary-2;
+        max-width: 40ch;
+    }
+
+    &__heading {
+        font-size: 1.8rem;
+        font-weight: $fw-600;
+        margin-bottom: 2rem;
+    }
+
+    // 2. kolona - Navigacija
+    &__links {
+        display: grid;
+        gap: 1rem;
+        a {
+            color: $clr-secondary-2;
+            font-weight: $fw-400;
+            font-size: 1.6rem;
+
+            &:hover {
+                color: $clr-accent-100;
+            }
+        }
+    }
+
+
+    // 3. kolona - Informacije
+    &__contact {
+        &--box {
+            display: flex;
+            gap: 2rem;
+            color: $clr-secondary-2;
+
+            img {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        &--list {
+            display: grid;
+            gap: 1rem;
+        }
+    }
+}

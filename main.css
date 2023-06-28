@@ -743,6 +743,9 @@ body {
   color: rgba(0, 0, 0, 0.8078431373);
 }
 
+.partners {
+  padding-bottom: 5rem;
+}
 .partners__heading {
   display: flex;
   flex-direction: column;
@@ -791,6 +794,55 @@ body {
   .partner p {
     font-size: 1.4rem;
   }
+}
+
+.footer {
+  padding: 5rem;
+  height: 30rem;
+  background-color: #9db7a5;
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+.footer__logo {
+  height: 8rem;
+  width: 15rem;
+}
+.footer__text {
+  color: rgba(0, 0, 0, 0.8078431373);
+  max-width: 40ch;
+}
+.footer__heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.footer__links {
+  display: grid;
+  gap: 1rem;
+}
+.footer__links a {
+  color: rgba(0, 0, 0, 0.8078431373);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.footer__links a:hover {
+  color: #ffffff;
+}
+.footer__contact--box {
+  display: flex;
+  gap: 2rem;
+  color: rgba(0, 0, 0, 0.8078431373);
+}
+.footer__contact--box img {
+  height: 30px;
+  width: 30px;
+}
+.footer__contact--list {
+  display: grid;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
