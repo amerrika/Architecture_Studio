@@ -680,16 +680,16 @@ body {
   display: grid;
   gap: 1rem;
   row-gap: 5rem;
-  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
 }
-@media (max-width: 992px) {
+@media (min-width: 576px) {
   .services__wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 576px) {
+@media (min-width: 992px) {
   .services__wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

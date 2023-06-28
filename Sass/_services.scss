@@ -40,14 +40,17 @@
         display: grid;
         gap: 1rem;
         row-gap: 5rem;
-        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        
 
-        @media(max-width: $bp-md){
+        // Tablet
+        @media(min-width: $bp-sm){
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media(max-width: $bp-sm){
-            grid-template-columns: 1fr;
+        // Desktop
+        @media(min-width: $bp-md){
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }
