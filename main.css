@@ -113,7 +113,7 @@ body {
 
 .heading-secondary {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #000000;
   line-height: 1.5;
 }
@@ -652,13 +652,12 @@ body {
   padding: 10px;
 }
 .service__box--icon img {
-  height: 48px;
-  width: 48px;
+  height: 60px;
+  width: 60px;
 }
 .service__box--heading {
-  font-size: 1.8rem;
-  color: #9db7a5;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 .service__box--content {
@@ -666,7 +665,7 @@ body {
 }
 .service__box--content p {
   font-size: 1.5rem;
-  color: #646f79;
+  color: rgba(0, 0, 0, 0.8078431373);
   max-width: 40ch;
 }
 
@@ -682,7 +681,17 @@ body {
   display: grid;
   gap: 1rem;
   row-gap: 5rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 992px) {
+  .services__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .services__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 .why {
@@ -706,7 +715,8 @@ body {
 .why__text {
   padding: 2rem 0;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 500;
   max-width: 60ch;
 }
 @media (max-width: 576px) {
@@ -726,11 +736,12 @@ body {
 }
 .why__box--heading h4 {
   font-size: 2.2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 .why__box--content p {
   font-size: 1.8rem;
   max-width: 30ch;
+  color: rgba(0, 0, 0, 0.8078431373);
 }
 
 .partners__heading {
@@ -743,11 +754,12 @@ body {
 .partners__text {
   text-align: center;
   max-width: 60ch;
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 500;
 }
 .partners__icon {
-  width: 40px;
-  height: 40px;
+  width: 64px;
+  height: 64px;
 }
 .partners__wrapper {
   display: grid;

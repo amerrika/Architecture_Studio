@@ -58,6 +58,7 @@ li {
 $clr-primary: #9db7a5;
 
 $clr-secondary: #646f79;
+$clr-secondary-2: #000000ce;
 
 $clr-accent-100: #ffffff;
 $clr-accent-900: #000000;
@@ -135,7 +136,7 @@ body {
 }
 .heading-secondary {
   font-size: 3rem;
-  font-weight: $fw-500;
+  font-weight: $fw-600;
   color: $clr-accent-900;
   line-height: 1.5;
   @media (max-width: $bp-sm){
