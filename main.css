@@ -557,7 +557,7 @@ body {
 }
 @media (max-width: 576px) {
   .about__column:last-child {
-    padding: 0 2rem;
+    padding: 0 0rem;
   }
 }
 .about__extra {
