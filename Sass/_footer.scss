@@ -4,16 +4,15 @@
 
     &__wrapper {
         display: grid;
-        
         gap: 5rem;
 
-        & > * {
-            justify-self: center;
-        }
-
-        // Tablet i desktop 3 kolone
+        // Tablet i desktop imaju 3 kolone, svaka kolona centrirana
         @media (min-width: $bp-sm){
             grid-template-columns: repeat(3, 1fr);
+
+            & > * {
+                justify-self: center;
+            }
         }
     }
 
@@ -64,7 +63,7 @@
 
         &--list {
             display: grid;
-            gap: 1rem;
+            gap: 2rem;
         }
     }
 
@@ -75,5 +74,12 @@
         align-items: center;
         justify-content: center;
         color: $clr-secondary-3;
+
+        @media(max-width: $bp-sm){
+            text-align: center;
+            span {
+                display: block;
+            }
+        }
     }
 }

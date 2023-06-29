@@ -804,12 +804,12 @@ body {
   display: grid;
   gap: 5rem;
 }
-.footer__wrapper > * {
-  justify-self: center;
-}
 @media (min-width: 576px) {
   .footer__wrapper {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__wrapper > * {
+    justify-self: center;
   }
 }
 .footer__logo {
@@ -849,7 +849,7 @@ body {
 }
 .footer__contact--list {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 .footer__bottom {
   padding: 3rem 0 1rem 0;
@@ -857,6 +857,14 @@ body {
   align-items: center;
   justify-content: center;
   color: rgba(0, 0, 0, 0.6509803922);
+}
+@media (max-width: 576px) {
+  .footer__bottom {
+    text-align: center;
+  }
+  .footer__bottom span {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
