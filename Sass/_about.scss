@@ -6,7 +6,7 @@
     &__wrapper {
         padding: 2rem 0;
         display: grid;
-        gap: 3rem;
+        gap: 5rem;
         
         @media (min-width: $bp-sm){
             gap: 5rem;
@@ -54,6 +54,16 @@
                 max-height: 50rem;
                 box-shadow:  -1px -1px 3px 0px rgba(0,0,0,0.6);
                 object-fit: cover;
+
+                // Image height for mobile
+                @media(max-width: $bp-sm){
+                    max-height: 40rem;
+                }
+            }
+
+            // padding for mobile to make image smaller
+            @media (max-width: $bp-sm){
+                padding: 0 2rem;
             }
         }
     }
