@@ -1,4 +1,4 @@
-const btnToggle = document.querySelector(".btn--toggle");
+const btnToggle = document.querySelector(".btn__toggle");
 const mainNav = document.querySelector(".main-nav");
 
 btnToggle.addEventListener("click", function () {

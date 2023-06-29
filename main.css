@@ -193,15 +193,19 @@ body {
   }
 }
 
-.btn__link, .btn__link--highlight-dark, .btn__link--highlight-white {
+.btn, .btn__footer, .btn__toggle, .btn__link, .btn__link--highlight-dark, .btn__link--highlight-white {
   cursor: pointer;
   display: block;
   border: none;
+  transition: all 0.2s linear;
+  background-color: transparent;
+}
+
+.btn__link, .btn__link--highlight-dark, .btn__link--highlight-white {
   color: #ffffff;
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: capitalize;
-  transition: all 0.2s linear;
 }
 @media (max-width: 992px) {
   .btn__link, .btn__link--highlight-dark, .btn__link--highlight-white {
@@ -232,52 +236,18 @@ body {
   border: 2px solid #000000;
 }
 
-.btn--toggle {
-  display: block;
+.btn__toggle {
   margin-right: 0;
   margin-left: auto;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  transition: all 0.2s ease;
   height: 60px;
 }
-.btn--toggle:hover {
+.btn__toggle:hover {
   transform: scale(1.1);
 }
 @media (min-width: 992px) {
-  .btn--toggle {
+  .btn__toggle {
     display: none;
   }
-}
-
-.btn--back,
-.btn--next {
-  cursor: pointer;
-  background: none;
-  border: none;
-  height: 80px;
-  width: 80px;
-  transition: all 0.2s;
-}
-.btn--back:hover,
-.btn--next:hover {
-  transform: rotate(360deg);
-}
-@media (max-width: 576px) {
-  .btn--back,
-  .btn--next {
-    height: 30px;
-    width: 30px;
-  }
-}
-
-.btn--back {
-  left: -5%;
-}
-
-.btn--next {
-  right: -5%;
 }
 
 .section__intro {
@@ -318,18 +288,6 @@ body {
 .signature {
   height: 100px;
   width: 200px;
-}
-
-.btn--extra {
-  display: block;
-  padding: 0.5rem 1rem;
-  text-align: center;
-  color: black;
-}
-@media (min-width: 576px) {
-  .btn--extra {
-    border: 2px solid #ffffff;
-  }
 }
 
 @media (min-width: 992px) {
@@ -733,6 +691,12 @@ body {
   height: 80px;
   width: 80px;
 }
+@media (max-width: 576px) {
+  .why__box--icon img {
+    height: 65px;
+    width: 65px;
+  }
+}
 .why__box--heading h4 {
   font-size: 2.2rem;
   font-weight: 700;
@@ -856,7 +820,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(0, 0, 0, 0.6509803922);
+  color: rgba(0, 0, 0, 0.5019607843);
 }
 @media (max-width: 576px) {
   .footer__bottom {

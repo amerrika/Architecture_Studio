@@ -39,6 +39,11 @@
         img {
             height: 80px;
             width: 80px;
+
+            @media (max-width: $bp-sm){
+                height: 65px;
+                width: 65px;
+            }
         }
     }
 

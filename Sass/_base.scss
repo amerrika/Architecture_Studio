@@ -59,7 +59,7 @@ $clr-primary: #9db7a5;
 
 $clr-secondary: #646f79;
 $clr-secondary-2: #000000ce;
-$clr-secondary-3: #000000a6;
+$clr-secondary-3: #00000080;
 
 $clr-accent-100: #ffffff;
 $clr-accent-900: #000000;
@@ -78,6 +78,8 @@ $bp-sm: 576px;
 
 $shadow-light: 0 5px 15px rgba(0, 0, 0, 0.2);
 $shadow-test: 0px 16px 5px 0px rgba(0,0,0,0.75);
+
+$transition: all .2s linear;
 
 
 /* General styling */
