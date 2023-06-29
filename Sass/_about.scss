@@ -4,12 +4,13 @@
     font-size: 1.8rem;
 
     &__wrapper {
-        padding: 5rem 0;
+        padding: 2rem 0;
         display: grid;
         gap: 3rem;
         
         @media (min-width: $bp-sm){
             gap: 5rem;
+            padding: 5rem;
         }
         
         // za tablet zelimo naslov preko cijele sirine, i dvije kolone ispod naslova
@@ -31,7 +32,9 @@
 
         // Prva kolona
         &:first-child {
-            gap: 8rem;
+            @media(min-width: $bp-md){
+                gap: 8rem;
+            }
         }
 
         // Druga kolona

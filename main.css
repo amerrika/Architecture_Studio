@@ -507,13 +507,14 @@ body {
   font-size: 1.8rem;
 }
 .about__wrapper {
-  padding: 5rem 0;
+  padding: 2rem 0;
   display: grid;
   gap: 3rem;
 }
 @media (min-width: 576px) {
   .about__wrapper {
     gap: 5rem;
+    padding: 5rem;
   }
 }
 @media (min-width: 576px) and (max-width: 992px) {
@@ -530,8 +531,10 @@ body {
   display: flex;
   flex-direction: column;
 }
-.about__column:first-child {
-  gap: 8rem;
+@media (min-width: 992px) {
+  .about__column:first-child {
+    gap: 8rem;
+  }
 }
 .about__column:nth-child(2) {
   gap: 1rem;
