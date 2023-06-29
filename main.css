@@ -301,10 +301,22 @@ body {
   object-fit: cover;
   border: 5px solid #9db7a5;
 }
+@media (max-width: 576px) {
+  .img-owner {
+    height: 150px;
+    width: 150px;
+  }
+}
 
 .signature {
   height: 100px;
   width: 200px;
+}
+@media (max-width: 576px) {
+  .signature {
+    height: 100px;
+    width: 150px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -557,7 +569,7 @@ body {
 }
 @media (max-width: 576px) {
   .about__column:last-child {
-    padding: 0 0rem;
+    padding: 0 1rem;
   }
 }
 .about__extra {
@@ -566,9 +578,10 @@ body {
 }
 @media (max-width: 576px) {
   .about__extra {
-    flex-direction: column;
-    align-items: flex-start;
+    /* flex-direction: column;
+    align-items: flex-start; */
     padding-top: 5rem;
+    gap: 2rem;
   }
 }
 .about__box {
