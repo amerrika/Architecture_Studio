@@ -211,7 +211,7 @@ body {
   .btn__link, .btn__link--highlight-dark, .btn__link--highlight-white {
     color: #000000;
     padding: 1rem 0;
-    border-top: 1px solid rgba(100, 111, 121, 0.15);
+    border-top: 1px solid rgba(100, 111, 121, 0.1490196078);
   }
 }
 @media (min-width: 992px) {
@@ -254,6 +254,7 @@ body {
   color: rgba(0, 0, 0, 0.8078431373);
   font-weight: 400;
   font-size: 1.6rem;
+  border-bottom: 1px solid rgba(100, 111, 121, 0.1490196078);
 }
 @media (min-width: 992px) {
   .btn__footer:hover {
