@@ -6,13 +6,18 @@
         display: grid;
         gap: 5rem;
 
-        // Tablet i desktop imaju 3 kolone, svaka kolona centrirana
+        // Dekstop/Tablet imaju 3 kolone, svaka kolona centrirana
         @media (min-width: $bp-sm){
             grid-template-columns: repeat(3, 1fr);
 
             & > * {
                 justify-self: center;
             }
+        }
+
+        // Tablet only
+        @media(min-width: $bp-sm) and (max-width: $bp-md){
+            gap: 2rem;
         }
     }
 
@@ -36,15 +41,8 @@
     &__links {
         display: grid;
         gap: 1rem;
-        a {
-            color: $clr-secondary-2;
-            font-weight: $fw-400;
-            font-size: 1.6rem;
-
-            &:hover {
-                color: $clr-accent-900;
-                text-decoration: underline;
-            }
+        @media(max-width: $bp-md){
+            gap: 2rem;
         }
     }
 
@@ -67,7 +65,7 @@
         }
     }
 
-    // Footer-bottom
+    // Footer bottom
     &__bottom {
         padding: 3rem 0 1rem 0;
         display: flex;
@@ -80,6 +78,7 @@
             span {
                 display: block;
             }
+            padding-top: 5rem;
         }
     }
 }

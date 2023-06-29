@@ -69,6 +69,19 @@
 
 .btn__footer {
     @extend .btn;
+
+    color: $clr-secondary-2;
+    font-weight: $fw-400;
+    font-size: 1.6rem;
+
+    &:hover {
+        // Desktop
+        @media(min-width: $bp-md){
+            color: $clr-accent-900;
+            text-decoration: underline;
+        }
+        
+    }
 }
 
 
