@@ -1,12 +1,20 @@
 .footer {
-    padding: 5rem;
-    height: 30rem;
+    padding-top: 5rem;
     background-color: $clr-primary;
 
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        
         gap: 5rem;
+
+        & > * {
+            justify-self: center;
+        }
+
+        // Tablet i desktop 3 kolone
+        @media (min-width: $bp-sm){
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
     &__logo {
@@ -35,11 +43,11 @@
             font-size: 1.6rem;
 
             &:hover {
-                color: $clr-accent-100;
+                color: $clr-accent-900;
+                text-decoration: underline;
             }
         }
     }
-
 
     // 3. kolona - Informacije
     &__contact {
@@ -58,5 +66,14 @@
             display: grid;
             gap: 1rem;
         }
+    }
+
+    // Footer-bottom
+    &__bottom {
+        padding: 3rem 0 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $clr-secondary-3;
     }
 }

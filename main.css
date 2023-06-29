@@ -797,14 +797,20 @@ body {
 }
 
 .footer {
-  padding: 5rem;
-  height: 30rem;
+  padding-top: 5rem;
   background-color: #9db7a5;
 }
 .footer__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
+}
+.footer__wrapper > * {
+  justify-self: center;
+}
+@media (min-width: 576px) {
+  .footer__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .footer__logo {
   height: 8rem;
@@ -829,7 +835,8 @@ body {
   font-size: 1.6rem;
 }
 .footer__links a:hover {
-  color: #ffffff;
+  color: #000000;
+  text-decoration: underline;
 }
 .footer__contact--box {
   display: flex;
@@ -843,6 +850,13 @@ body {
 .footer__contact--list {
   display: grid;
   gap: 1rem;
+}
+.footer__bottom {
+  padding: 3rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.6509803922);
 }
 
 /*# sourceMappingURL=main.css.map */
