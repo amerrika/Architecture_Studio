@@ -254,7 +254,11 @@ body {
   color: rgba(0, 0, 0, 0.8078431373);
   font-weight: 400;
   font-size: 1.6rem;
-  border-bottom: 1px solid rgba(100, 111, 121, 0.1490196078);
+}
+@media (max-width: 992px) {
+  .btn__footer {
+    border-bottom: 1px solid rgba(100, 111, 121, 0.1490196078);
+  }
 }
 @media (min-width: 992px) {
   .btn__footer:hover {
@@ -498,10 +502,9 @@ body {
 }
 
 .about {
-  background-color: #ffffff;
-  color: #000000;
-  color: #646f79;
+  color: rgba(0, 0, 0, 0.8078431373);
   padding: 10rem 0;
+  font-size: 1.8rem;
 }
 .about__wrapper {
   padding: 5rem 0;
@@ -526,16 +529,23 @@ body {
 .about__column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+.about__column:first-child {
+  gap: 8rem;
+}
+.about__column:nth-child(2) {
+  gap: 1rem;
 }
 .about__column:last-child {
+  justify-content: center;
+}
+.about__column:last-child div:first-child {
   position: relative;
 }
 .about__column:last-child img {
-  max-height: 500px;
-  object-fit: cover;
-  z-index: 1;
+  max-height: 50rem;
   box-shadow: -1px -1px 3px 0px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
 }
 .about__extra {
   display: flex;
@@ -549,13 +559,13 @@ body {
   }
 }
 .about__box {
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-color: #9db7a5;
   position: absolute;
   bottom: 20px;
   left: 20px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .projects {

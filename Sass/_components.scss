@@ -73,15 +73,17 @@
     color: $clr-secondary-2;
     font-weight: $fw-400;
     font-size: 1.6rem;
-    border-bottom: 1px solid $clr-secondary-4;
+
+    @media(max-width: $bp-md){
+        border-bottom: 1px solid $clr-secondary-4;
+    }
 
     &:hover {
         // Desktop
         @media(min-width: $bp-md){
             color: $clr-accent-900;
             text-decoration: underline;
-        }
-        
+        }  
     }
 }
 
