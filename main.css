@@ -602,6 +602,12 @@ body {
   left: 20px;
   z-index: -1;
 }
+@media (max-width: 576px) {
+  .about__box {
+    bottom: 10px;
+    left: 10px;
+  }
+}
 
 .projects {
   background-color: #fff;
