@@ -34,6 +34,10 @@
             @media(min-width: $bp-md){
                 gap: 8rem;
             }
+
+            h2 {
+                text-align: left;
+            }
         }
 
         // Druga kolona

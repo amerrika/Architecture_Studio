@@ -98,27 +98,27 @@ body {
 /* Utilites */
 
 .container {
-  width: min(1400px, 100% - 20px);
+  width: min(1400px, 100% - 30px);
   margin-inline: auto;
 }
 
 .container-left {
-  width: min(1400px, 100% - 20px);
+  width: min(1400px, 100% - 30px);
   margin-inline: auto;
 
   @media(min-width: $bp-md){
-    width: min(1400px / 2, 100% - 20px);
+    width: min(1400px / 2, 100% - 30px);
     margin-inline:unset;
     margin-left: auto;
   }
 }
 
 .container-right {
-  width: min(1400px, 100% - 20px);
+  width: min(1400px, 100% - 30px);
   margin-inline: auto;
   
   @media(min-width: $bp-md){
-    width: min(1400px / 2, 100% - 20px);
+    width: min(1400px / 2, 100% - 30px);
     margin-inline:unset;
     margin-right: auto;
   }
