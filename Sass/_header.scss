@@ -6,8 +6,8 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    // Mobile only
-    @media (max-width: $bp-sm){
+    // Mobile & Tablet only
+    @media (max-width: $bp-md){
         padding: 1rem 0;
     }
 }
@@ -64,7 +64,7 @@
 .logo {
     max-width: 150px;
 
-    @media (max-width: $bp-sm){
+    @media (max-width: $bp-md){
         max-width: 120px;
     }
 }

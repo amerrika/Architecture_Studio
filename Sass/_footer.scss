@@ -2,6 +2,10 @@
     padding-top: 5rem;
     background-color: $clr-primary;
 
+    @media(max-width: $bp-sm){
+        padding-top: 2rem;
+    }
+
     &__wrapper {
         display: grid;
         gap: 5rem;
@@ -22,8 +26,13 @@
     }
 
     &__logo {
-        height: 8rem;
-        width: 15rem;
+        height: 70px;
+        width: 120px; 
+
+        @media(min-width: $bp-md){
+            height: 80px;
+            width: 150px;
+        }
     }
 
     &__text {
