@@ -14,11 +14,11 @@
     font-weight: $fw-600;
     text-transform: capitalize;
 
-    // mobile/tablet styles
+    // Mobile & Tablet only
     @media (max-width: $bp-md){
-        color: $clr-accent-900;
+        color: $clr-secondary-2;
         padding: 1rem 0;
-        border-top: 1px solid #646f7926;
+        border-bottom: 1px solid #646f7926;
     }
 
     // Hover effect for desktop
