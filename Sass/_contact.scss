@@ -1,0 +1,69 @@
+.contact {
+    padding: 10rem 0;
+
+    &__wrapper {
+        display: grid;
+        padding: 2rem 0;
+
+        // Desktop
+        @media(min-width: $bp-md){
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__column {
+        height: 600px;
+
+        // 1. Kolona
+        &:first-child {
+            font-size: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            
+            
+        }
+        // 2. Kolona
+        &:nth-child(2) {
+            background-color: $clr-primary;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        // 3. Kolona
+        &:last-child {
+            background-color: $clr-primary;
+        }
+    }
+}
+
+
+.contact__box {
+    &--header {
+        display: flex;
+        gap: 20px;
+        align-items: end;
+
+        img {
+            height: 40px;
+            width: 40px;
+        }
+
+        span {
+            font-size: 2rem;
+            color: $clr-secondary-2;
+            font-weight: $fw-600;
+        }
+    }
+
+    &--content {
+        padding-left: 60px;
+        font-size: 1.8rem;
+    }
+
+    
+
+    
+
+}

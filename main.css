@@ -269,7 +269,7 @@ body {
 }
 
 .section__intro {
-  width: min(1400px + (100% - 1400px) / 2, 100% - 10px);
+  width: min(1400px + (100% - 1400px) / 2, 100% - 15px);
   margin-left: auto;
 }
 .section__intro div {
@@ -723,6 +723,57 @@ body {
   .services__wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.contact {
+  padding: 10rem 0;
+}
+.contact__wrapper {
+  display: grid;
+  padding: 2rem 0;
+}
+@media (min-width: 992px) {
+  .contact__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.contact__column {
+  height: 600px;
+}
+.contact__column:first-child {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact__column:nth-child(2) {
+  background-color: #9db7a5;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contact__column:last-child {
+  background-color: #9db7a5;
+}
+
+.contact__box--header {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+}
+.contact__box--header img {
+  height: 40px;
+  width: 40px;
+}
+.contact__box--header span {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.8078431373);
+  font-weight: 600;
+}
+.contact__box--content {
+  padding-left: 60px;
+  font-size: 1.8rem;
 }
 
 .why {
