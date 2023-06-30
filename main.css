@@ -451,8 +451,8 @@ body {
 }
 @media (max-width: 992px) {
   .hero__left--content {
-    padding: 5rem 0;
-    gap: 2rem;
+    padding: 3rem 0;
+    gap: 3rem;
   }
 }
 .hero__left--buttons {
