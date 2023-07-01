@@ -13,6 +13,9 @@
 
     &__column {
         height: 600px;
+        @media(max-width: $bp-sm){
+            height: 450px;
+        }
 
         // 1. Kolona
         &:first-child {
@@ -21,6 +24,14 @@
             flex-direction: column;
             gap: 3rem;
             
+            h2 {
+                text-align: left;
+            }
+
+            // Desktop only
+            @media(min-width: $bp-md){
+                padding-right: 30px;
+            }
             
         }
         // 2. Kolona
@@ -29,7 +40,10 @@
             padding: 30px;
             display: flex;
             flex-direction: column;
-            gap: 3rem;
+            gap: 5rem;
+            @media (max-width: $bp-sm){
+                padding: 10px;
+            }
         }
         // 3. Kolona
         &:last-child {
@@ -43,7 +57,7 @@
     &--header {
         display: flex;
         gap: 20px;
-        align-items: end;
+        align-items: start;
 
         img {
             height: 40px;
@@ -52,7 +66,6 @@
 
         span {
             font-size: 2rem;
-            color: $clr-secondary-2;
             font-weight: $fw-600;
         }
     }
@@ -60,10 +73,49 @@
     &--content {
         padding-left: 60px;
         font-size: 1.8rem;
+        display: grid;
+        gap: 1rem;
+        color: $clr-secondary-2;
     }
+}
 
-    
 
-    
-
+.map-container {
+    position: relative;
+    overflow: hidden;
+}
+.map-container:before, .map-container:after, .map:before, .map:after {
+    position: absolute;
+    display: block;
+    box-shadow: 0 0 10px 1px rgb(157, 183, 165);
+    content: '';
+    z-index: 5;
+}
+.map-container:before {
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 5px;
+}
+.map-container:after {
+    right: -5px;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+}
+.map:before{
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 5px;
+}
+.map:after{
+    left: -5px;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+}
+#map {
+    width: inherit;
+    height: inherit;
 }
