@@ -32,6 +32,16 @@
             @media(min-width: $bp-md){
                 padding-right: 30px;
             }
+
+            img {
+                width: 200px;
+                height: 200px;
+
+                @media (max-width: $bp-sm){
+                    width: 100px;
+                    height: 100px;
+                }
+            }
             
         }
         // 2. Kolona

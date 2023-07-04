@@ -757,6 +757,16 @@ body {
     padding-right: 30px;
   }
 }
+.contact__column:first-child img {
+  width: 200px;
+  height: 200px;
+}
+@media (max-width: 576px) {
+  .contact__column:first-child img {
+    width: 100px;
+    height: 100px;
+  }
+}
 .contact__column:nth-child(2) {
   background-color: #9db7a5;
   padding: 30px;
@@ -899,6 +909,7 @@ body {
 
 .partners {
   padding-bottom: 5rem;
+  position: relative;
 }
 .partners__heading {
   display: flex;
