@@ -215,27 +215,38 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .btn__link:hover, .btn__link--highlight-dark:hover, .btn__link--highlight-white:hover {
+  .btn__link:hover, .btn__link--highlight-dark:hover, .btn__link--highlight-white:hover, .btn__link:focus, .btn__link--highlight-dark:focus, .btn__link--highlight-white:focus {
+    outline: none;
     color: #000000;
   }
 }
 .btn__link--highlight-white {
-  border-radius: 5px;
-  padding: 5px 30px;
+  border-radius: 3px;
+  padding: 10px 30px;
   border: 1px solid #0d0e10;
   color: #0d0e10;
 }
+@media (min-width: 992px) {
+  .btn__link--highlight-white:hover, .btn__link--highlight-white:focus {
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+  }
+}
 .btn__link--highlight-dark {
-  border-radius: 5px;
-  padding: 5px 30px;
-  background-color: #424d45;
+  border-radius: 3px;
+  padding: 10px 30px;
+  background-color: #0d0e10;
   color: #ffffff;
   letter-spacing: 0.5px;
+  border: 1px solid #0d0e10;
 }
-.btn__link--highlight-dark:hover {
-  color: #000000;
-  background-color: #ffffff;
-  box-shadow: inset 1px 1px 2px #9db7a5;
+@media (min-width: 992px) {
+  .btn__link--highlight-dark:hover, .btn__link--highlight-dark:focus {
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+  }
 }
 
 .btn__toggle {
@@ -263,7 +274,8 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .btn__footer:hover {
+  .btn__footer:hover, .btn__footer:focus {
+    outline: none;
     color: #000000;
     text-decoration: underline;
   }

@@ -21,33 +21,50 @@
     }
 
     // Hover effect for desktop
-    &:hover {
+    &:hover,
+    &:focus {
         @media(min-width: $bp-md)
         {
+            outline: none;
             color: $clr-accent-900;
         }
     }
 
     &--highlight-white {
         @extend .btn__link;
-        border-radius: 5px;
-        padding: 5px 30px;
+        border-radius: 3px;
+        padding: 10px 30px;
         border: 1px solid $clr-accent-800;
         color: $clr-accent-800;
+
+        &:hover,
+        &:focus {
+            // hover only for desktop
+            @media(min-width: $bp-md){
+                color: $clr-accent-100;
+                background-color: transparent;
+                border: 1px solid $clr-accent-100;
+            }             
+        }
     }
 
     &--highlight-dark {
         @extend .btn__link;
-        border-radius: 5px;
-        padding: 5px 30px;
-        background-color: $clr-primary-2;
+        border-radius: 3px;
+        padding: 10px 30px;
+        background-color: $clr-accent-800;
         color: $clr-accent-100;
         letter-spacing: .5px;
+        border: 1px solid $clr-accent-800;
 
-        &:hover {
-            color: $clr-accent-900;
-            background-color: $clr-accent-100;
-            box-shadow: inset 1px 1px 2px $clr-primary;            
+        &:hover,
+        &:focus {
+            // hover only for desktop
+            @media(min-width: $bp-md){
+                color: $clr-accent-100;
+                background-color: transparent;
+                border: 1px solid $clr-accent-100;
+            }           
         }
     }
 }
@@ -79,9 +96,11 @@
         border-bottom: 1px solid $clr-secondary-4;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         // Desktop
         @media(min-width: $bp-md){
+            outline: none;
             color: $clr-accent-900;
             text-decoration: underline;
         }  
