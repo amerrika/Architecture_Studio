@@ -11,8 +11,7 @@
     @extend .btn;
     color: $clr-accent-100;
     font-size: 1.8rem;
-    font-weight: $fw-600;
-    text-transform: capitalize;
+    font-weight: $fw-500;
 
     // Mobile & Tablet only
     @media (max-width: $bp-md){
@@ -33,20 +32,22 @@
         @extend .btn__link;
         border-radius: 5px;
         padding: 5px 30px;
-        border: 2px solid $clr-accent-100;
-        color: $clr-accent-100;
+        border: 1px solid $clr-accent-800;
+        color: $clr-accent-800;
     }
 
     &--highlight-dark {
         @extend .btn__link;
         border-radius: 5px;
         padding: 5px 30px;
-        border: 2px solid $clr-secondary;
-        color: $clr-accent-900;
+        background-color: $clr-accent-800;
+        color: $clr-accent-100;
+        letter-spacing: .5px;
 
         &:hover {
-            color: $clr-accent-100;
-            border: 2px solid $clr-accent-900;
+            color: $clr-accent-900;
+            background-color: $clr-accent-100;
+            box-shadow: inset 1px 1px 2px $clr-primary;            
         }
     }
 }

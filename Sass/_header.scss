@@ -33,7 +33,8 @@
         @media (min-width: $bp-md){
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
+            padding-left: 5rem;
         }
 
         // Mobile

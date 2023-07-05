@@ -14,7 +14,7 @@
     &__column {
         height: 600px;
         @media(max-width: $bp-sm){
-            height: 450px;
+            height: unset;
         }
 
         // 1. Kolona
@@ -33,16 +33,20 @@
                 padding-right: 30px;
             }
 
+            // Mobile only
+            @media(max-width: $bp-sm){
+                padding-bottom: 5rem;
+            }
+
             img {
                 width: 200px;
                 height: 200px;
 
                 @media (max-width: $bp-sm){
-                    width: 100px;
-                    height: 100px;
+                    width: 80px;
+                    height: 80px;
                 }
             }
-            
         }
         // 2. Kolona
         &:nth-child(2) {
@@ -52,7 +56,7 @@
             flex-direction: column;
             gap: 5rem;
             @media (max-width: $bp-sm){
-                padding: 10px;
+                padding: 30px 10px 30px 10px;
             }
         }
         // 3. Kolona
@@ -84,7 +88,7 @@
         padding-left: 60px;
         font-size: 1.8rem;
         display: grid;
-        gap: 1rem;
+        gap: .5rem;
         color: $clr-secondary-2;
     }
 }
