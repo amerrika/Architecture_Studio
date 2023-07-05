@@ -62,6 +62,10 @@
         // 3. Kolona
         &:last-child {
             background-color: $clr-primary;
+
+            @media(max-width: $bp-sm){
+                height: 20rem;
+            }
         }
     }
 }

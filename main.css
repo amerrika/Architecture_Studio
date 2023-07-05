@@ -788,6 +788,11 @@ body {
 .contact__column:last-child {
   background-color: #9db7a5;
 }
+@media (max-width: 576px) {
+  .contact__column:last-child {
+    height: 20rem;
+  }
+}
 
 .contact__box--header {
   display: flex;
