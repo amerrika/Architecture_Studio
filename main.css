@@ -630,68 +630,117 @@ body {
   }
 }
 
-.projects {
-  background-color: #fff;
-}
 .projects__wrapper {
   padding: 5rem 0;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem; */
 }
-.projects__top {
+.projects__topline {
   display: flex;
-  margin-bottom: 3rem;
-}
-.projects__top > * {
-  flex-basis: 50%;
-}
-.projects__top div:last-child {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  gap: 2rem;
+}
+.projects__text {
+  font-size: 2.2rem;
+  max-width: 60ch;
+  padding: 2rem 0;
+  font-weight: 500;
+  text-align: center;
 }
 
-.project-box {
-  height: 50rem;
-  width: 60rem;
-  box-shadow: 1px -1px 5px 0px rgba(0, 0, 0, 0.3);
+.project__render {
+  height: 450px;
 }
-.project-box img {
-  height: 70%;
+.project__render--image {
+  height: 250px;
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.project__render--image img {
+  height: 100%;
   object-fit: cover;
+  z-index: -5;
+  position: relative;
 }
-.project-box__content {
-  height: 30%;
-  padding: 20px 40px;
+.project__render--content {
+  height: 200px;
+  padding: 20px;
+  background-color: #9db7a5;
 }
-.project-box--topline {
+.project__render--heading {
   display: block;
-  letter-spacing: 0.06rem;
-  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
-.project-box__text {
-  font-size: 2rem;
+.project__render--text {
   margin-top: 20px;
   line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8078431373);
 }
 
-.slider__items {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.project__real {
+  height: 450px;
+  background-size: cover;
+  position: relative;
+}
+.project__real--text {
+  position: absolute;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  bottom: 10%;
+  left: 5%;
+}
+.project__real-zgrada {
+  background: linear-gradient(to top, rgba(13, 14, 16, 0.6), rgba(157, 183, 165, 0.5)), url(/images/projekti/image-project-zgrada.jpg);
 }
 
-.pagination {
-  padding: 2rem 0;
-  display: flex;
+.project__real-zgrada {
+  height: 450px;
+  background: linear-gradient(to top, rgba(13, 14, 16, 0.6), rgba(157, 183, 165, 0.5)), url(/images/projekti/image-project-zgrada.jpg);
+  background-size: cover;
+  position: relative;
+}
+.project__real-zgrada--text {
+  position: absolute;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  bottom: 10%;
+  left: 5%;
+}
+
+.project__real-pumpa {
+  height: 450px;
+  background: linear-gradient(to top, rgba(13, 14, 16, 0.6), rgba(157, 183, 165, 0.5)), url(/images/projekti/image-project-test.jpg);
+  background-size: cover;
+  position: relative;
+}
+.project__real-pumpa--text {
+  position: absolute;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  bottom: 10%;
+  left: 5%;
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
   gap: 1rem;
-  justify-content: center;
 }
-.pagination__button {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: none;
-  background-color: #9db7a5;
+
+.row-2 {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .service__box {
@@ -721,6 +770,7 @@ body {
 .services {
   background-color: #ffffff;
   color: black;
+  padding-bottom: 10rem;
 }
 .services__heading {
   text-align: center;

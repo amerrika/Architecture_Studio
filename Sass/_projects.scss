@@ -1,76 +1,138 @@
 .projects {
-    background-color: #fff;
 
     &__wrapper {
         padding: 5rem 0;
+
+        /* display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem; */
+        
     }
 
-    &__top {
+    &__topline {
         display: flex;
-        margin-bottom: 3rem;
-
-        > * {
-            flex-basis: 50%;
-        }
-
-        // Buttons
-        div:last-child {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 2rem;
-        }
-    }
-}
-
-
-.project-box {
-    height: 50rem;
-    width: 60rem;
-    box-shadow: 1px -1px 5px 0px rgba(0,0,0,0.3);
-
-    img {
-        height: 70%;
-        object-fit: cover;
-    }
-
-    &__content {
-        height: 30%;
-        padding: 20px 40px;
-    }
-
-    &--topline {
-        display: block;
-        letter-spacing: .06rem;
-        font-weight: 700;   
+        flex-direction: column;
+        align-items: center;
     }
 
     &__text {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        max-width: 60ch;
+        padding: 2rem 0;
+        font-weight: $fw-500;
+        text-align: center;
+    }
+}
+
+
+// Project Boxes
+
+.project__render {
+    height: 450px;
+
+    &--image {
+        height: 250px;
+        box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.3);
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            z-index: -5;
+            position: relative;
+        }
+    }
+
+    &--content {
+        height: 200px;
+        padding: 20px;
+        background-color: $clr-primary;
+    }
+
+    &--heading {
+        display: block;
+        letter-spacing: .5px;
+        font-size: 1.8rem;
+        font-weight: $fw-600;   
+    }
+
+    &--text {
         margin-top: 20px;
         line-height: 1.5;
+        color: $clr-secondary-2;
     }
 }
 
-.slider {
-    &__items {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+.project__real {
+    height: 450px;
+    background-size: cover;
+    position: relative;
+
+    &--text {
+        position: absolute;
+        letter-spacing: .5px;
+        font-size: 1.8rem;
+        font-weight: $fw-600;
+        color: $clr-accent-100;
+        bottom: 10%;
+        left: 5%;
+    }
+
+    &-zgrada {
+        background: 
+        $gradient,
+        url(/images/projekti/image-project-zgrada.jpg);
     }
 }
 
-.pagination {
-    padding: 2rem 0;
-    display: flex;
+.project__real-zgrada {
+    height: 450px;
+    background: 
+    $gradient,
+    url(/images/projekti/image-project-zgrada.jpg);
+    background-size: cover;
+    position: relative;
+
+    &--text {
+        position: absolute;
+        letter-spacing: .5px;
+        font-size: 1.8rem;
+        font-weight: $fw-600;
+        color: $clr-accent-100;
+        bottom: 10%;
+        left: 5%;
+    }
+}
+
+.project__real-pumpa {
+    height: 450px;
+    background: 
+    $gradient,
+    url(/images/projekti/image-project-test.jpg);
+    background-size: cover;
+    position: relative;
+
+    &--text {
+        position: absolute;
+        letter-spacing: .5px;
+        font-size: 1.8rem;
+        font-weight: $fw-600;
+        color: $clr-accent-100;
+        bottom: 10%;
+        left: 5%;
+    }
+}
+
+
+.row-1 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr; 
     gap: 1rem;
-    justify-content: center;
+}
 
-    &__button {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: none;
-        background-color: #9db7a5;
-    }
+.row-2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr; 
+    gap: 1rem;
+    margin-top: 1rem;
 }
