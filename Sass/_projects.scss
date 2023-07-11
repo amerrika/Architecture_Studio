@@ -45,7 +45,7 @@
     height: 450px;
 
     &--image {
-        height: 280px;
+        height: 300px;
         box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.3);
 
         img {
@@ -57,17 +57,11 @@
     }
 
     &--content {
-        height: 170px;
-        padding: 20px;
+        height: 150 px;
+        padding: 10px;
         background-color: $clr-primary;
     }
 
-    &--heading {
-        display: block;
-        letter-spacing: .5px;
-        font-size: 1.8rem;
-        font-weight: $fw-600;   
-    }
 
     &--text {
         margin-top: 20px;
@@ -80,7 +74,7 @@
     height: 450px;
 
     &--image {
-        height: 280px;
+        height: 300px;
         box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.3);
 
         img {
@@ -92,21 +86,13 @@
     }
 
     &--content {
-        height: 170px;
+        // height: 150px;
         padding: 20px;
         background-color: $clr-primary-2;
     }
 
-    &--heading {
-        display: block;
-        letter-spacing: .5px;
-        font-size: 1.8rem;
-        font-weight: $fw-600;  
-        color: $clr-secondary-2; 
-    }
 
     &--text {
-        margin-top: 20px;
         line-height: 1.5;
         color: $clr-secondary-2;
         color: white;
