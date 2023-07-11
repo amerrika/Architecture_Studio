@@ -1,7 +1,7 @@
 .header {
     // Desktop
     @media (min-width: $bp-md){
-        height: 9rem;
+        height: 9vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }

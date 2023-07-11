@@ -194,7 +194,7 @@ body {
   }
 }
 
-.btn, .btn__footer, .btn__toggle, .btn__link, .btn__link--highlight-dark, .btn__link--highlight-white {
+.btn, .btn__project, .btn__footer, .btn__toggle, .btn__link, .btn__link--highlight-dark, .btn__link--highlight-white {
   cursor: pointer;
   display: block;
   border: none;
@@ -223,8 +223,8 @@ body {
 .btn__link--highlight-white {
   border-radius: 3px;
   padding: 10px 30px;
-  border: 1px solid #0d0e10;
-  color: #0d0e10;
+  border: 1px solid #000000;
+  color: #000000;
 }
 @media (min-width: 992px) {
   .btn__link--highlight-white:hover, .btn__link--highlight-white:focus {
@@ -236,10 +236,10 @@ body {
 .btn__link--highlight-dark {
   border-radius: 3px;
   padding: 10px 30px;
-  background-color: #0d0e10;
+  background-color: #698271;
   color: #ffffff;
   letter-spacing: 0.5px;
-  border: 1px solid #0d0e10;
+  border: 1px solid #698271;
 }
 @media (min-width: 992px) {
   .btn__link--highlight-dark:hover, .btn__link--highlight-dark:focus {
@@ -279,6 +279,19 @@ body {
     color: #000000;
     text-decoration: underline;
   }
+}
+
+.btn__project {
+  width: 100%;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 1rem 0;
+  border-top: 1rem solid #9db7a5;
+  border-bottom: 1rem solid #9db7a5;
+}
+.btn__project:hover {
+  border-top: 1rem solid #698271;
 }
 
 .section__intro {
@@ -335,7 +348,7 @@ body {
 
 @media (min-width: 992px) {
   .header {
-    height: 9rem;
+    height: 9vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -444,7 +457,7 @@ body {
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 89vh;
+    height: 91vh;
   }
 }
 .hero__left {
@@ -649,96 +662,88 @@ body {
   font-weight: 500;
   text-align: center;
 }
+.projects__buttons {
+  background-color: #9db7a5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 2rem;
+}
+.projects__buttons--box {
+  width: 100%;
+}
 
-.project__render {
+.project__box {
   height: 450px;
 }
-.project__render--image {
-  height: 250px;
+.project__box--image {
+  height: 280px;
   box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
-.project__render--image img {
+.project__box--image img {
   height: 100%;
   object-fit: cover;
   z-index: -5;
   position: relative;
 }
-.project__render--content {
-  height: 200px;
+.project__box--content {
+  height: 170px;
   padding: 20px;
   background-color: #9db7a5;
 }
-.project__render--heading {
+.project__box--heading {
   display: block;
   letter-spacing: 0.5px;
   font-size: 1.8rem;
   font-weight: 600;
 }
-.project__render--text {
+.project__box--text {
   margin-top: 20px;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8078431373);
 }
 
-.project__real {
+.project__box--2 {
   height: 450px;
-  background-size: cover;
+}
+.project__box--2--image {
+  height: 280px;
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.project__box--2--image img {
+  height: 100%;
+  object-fit: cover;
+  z-index: -5;
   position: relative;
 }
-.project__real--text {
-  position: absolute;
+.project__box--2--content {
+  height: 170px;
+  padding: 20px;
+  background-color: #698271;
+}
+.project__box--2--heading {
+  display: block;
   letter-spacing: 0.5px;
   font-size: 1.8rem;
   font-weight: 600;
-  color: #ffffff;
-  bottom: 10%;
-  left: 5%;
+  color: rgba(0, 0, 0, 0.8078431373);
 }
-.project__real-zgrada {
-  background: linear-gradient(to top, rgba(13, 14, 16, 0.6), rgba(157, 183, 165, 0.5)), url(/images/projekti/image-project-zgrada.jpg);
-}
-
-.project__real-zgrada {
-  height: 450px;
-  background: linear-gradient(to top, rgba(13, 14, 16, 0.6), rgba(157, 183, 165, 0.5)), url(/images/projekti/image-project-zgrada.jpg);
-  background-size: cover;
-  position: relative;
-}
-.project__real-zgrada--text {
-  position: absolute;
-  letter-spacing: 0.5px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #ffffff;
-  bottom: 10%;
-  left: 5%;
-}
-
-.project__real-pumpa {
-  height: 450px;
-  background: linear-gradient(to top, rgba(13, 14, 16, 0.6), rgba(157, 183, 165, 0.5)), url(/images/projekti/image-project-test.jpg);
-  background-size: cover;
-  position: relative;
-}
-.project__real-pumpa--text {
-  position: absolute;
-  letter-spacing: 0.5px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #ffffff;
-  bottom: 10%;
-  left: 5%;
+.project__box--2--text {
+  margin-top: 20px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8078431373);
+  color: white;
 }
 
 .row-1 {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .row-2 {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-top: 1rem;
 }

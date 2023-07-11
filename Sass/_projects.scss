@@ -23,16 +23,29 @@
         font-weight: $fw-500;
         text-align: center;
     }
+
+    &__buttons {
+        background-color: $clr-primary;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 2rem;
+        
+        
+        &--box {
+            
+            width: 100%;
+        }
+    }
 }
 
 
 // Project Boxes
 
-.project__render {
+.project__box {
     height: 450px;
 
     &--image {
-        height: 250px;
+        height: 280px;
         box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.3);
 
         img {
@@ -44,7 +57,7 @@
     }
 
     &--content {
-        height: 200px;
+        height: 170px;
         padding: 20px;
         background-color: $clr-primary;
     }
@@ -63,76 +76,53 @@
     }
 }
 
-.project__real {
+.project__box--2 {
     height: 450px;
-    background-size: cover;
-    position: relative;
 
-    &--text {
-        position: absolute;
+    &--image {
+        height: 280px;
+        box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.3);
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            z-index: -5;
+            position: relative;
+        }
+    }
+
+    &--content {
+        height: 170px;
+        padding: 20px;
+        background-color: $clr-primary-2;
+    }
+
+    &--heading {
+        display: block;
         letter-spacing: .5px;
         font-size: 1.8rem;
-        font-weight: $fw-600;
-        color: $clr-accent-100;
-        bottom: 10%;
-        left: 5%;
+        font-weight: $fw-600;  
+        color: $clr-secondary-2; 
     }
-
-    &-zgrada {
-        background: 
-        $gradient,
-        url(/images/projekti/image-project-zgrada.jpg);
-    }
-}
-
-.project__real-zgrada {
-    height: 450px;
-    background: 
-    $gradient,
-    url(/images/projekti/image-project-zgrada.jpg);
-    background-size: cover;
-    position: relative;
 
     &--text {
-        position: absolute;
-        letter-spacing: .5px;
-        font-size: 1.8rem;
-        font-weight: $fw-600;
-        color: $clr-accent-100;
-        bottom: 10%;
-        left: 5%;
+        margin-top: 20px;
+        line-height: 1.5;
+        color: $clr-secondary-2;
+        color: white;
     }
 }
-
-.project__real-pumpa {
-    height: 450px;
-    background: 
-    $gradient,
-    url(/images/projekti/image-project-test.jpg);
-    background-size: cover;
-    position: relative;
-
-    &--text {
-        position: absolute;
-        letter-spacing: .5px;
-        font-size: 1.8rem;
-        font-weight: $fw-600;
-        color: $clr-accent-100;
-        bottom: 10%;
-        left: 5%;
-    }
-}
-
 
 .row-1 {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .row-2 {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr; 
     gap: 1rem;
     margin-top: 1rem;
 }

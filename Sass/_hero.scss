@@ -7,7 +7,7 @@
     @media (min-width: $bp-md){
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: 89vh;
+        height: 100vh - 9vh;
     }
 
 

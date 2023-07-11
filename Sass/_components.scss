@@ -34,8 +34,8 @@
         @extend .btn__link;
         border-radius: 3px;
         padding: 10px 30px;
-        border: 1px solid $clr-accent-800;
-        color: $clr-accent-800;
+        border: 1px solid $clr-accent-900;
+        color: $clr-accent-900;
 
         &:hover,
         &:focus {
@@ -52,10 +52,10 @@
         @extend .btn__link;
         border-radius: 3px;
         padding: 10px 30px;
-        background-color: $clr-accent-800;
+        background-color: $clr-primary-2;
         color: $clr-accent-100;
         letter-spacing: .5px;
-        border: 1px solid $clr-accent-800;
+        border: 1px solid $clr-primary-2;
 
         &:hover,
         &:focus {
@@ -107,6 +107,20 @@
     }
 }
 
+.btn__project {
+    @extend .btn;
+    width: 100%;
+    font-size: 2rem;
+    color: $clr-accent-100;
+    font-weight: $fw-600;
+    padding: 1rem 0;
+    border-top: 1rem solid $clr-primary;
+    border-bottom: 1rem solid $clr-primary;
+
+    &:hover {
+        border-top: 1rem solid $clr-primary-2;
+    }
+}
 
 .section__intro {
     width: min(1400px + ((100% - 1400px) / 2), 100% - 15px);
