@@ -119,7 +119,15 @@
 
     &:hover {
         border-top: 1rem solid $clr-primary-2;
+        color: $clr-accent-900;
     }
+}
+
+.btn__project-active {
+    border-top: 1rem solid $clr-primary-2;
+    background-color: $clr-accent-100;
+    border-bottom: 1rem solid $clr-accent-100;
+    color: $clr-accent-900;
 }
 
 .section__intro {

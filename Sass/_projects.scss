@@ -1,7 +1,7 @@
 .projects {
 
     &__wrapper {
-        padding: 5rem 0;
+        padding: 2rem 0 5rem 0;
 
         /* display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -42,7 +42,7 @@
 // Project Boxes
 
 .project__box {
-    height: 450px;
+    
 
     &--image {
         height: 300px;
@@ -57,21 +57,19 @@
     }
 
     &--content {
-        height: 150 px;
-        padding: 10px;
+        height: 150px;
         background-color: $clr-primary;
+        padding: 20px;
     }
 
 
     &--text {
-        margin-top: 20px;
         line-height: 1.5;
         color: $clr-secondary-2;
     }
 }
 
 .project__box--2 {
-    height: 450px;
 
     &--image {
         height: 300px;
@@ -86,7 +84,7 @@
     }
 
     &--content {
-        // height: 150px;
+        height: 150px;
         padding: 20px;
         background-color: $clr-primary-2;
     }
@@ -99,7 +97,7 @@
     }
 }
 
-.row-1 {
+.row-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     gap: 1rem;
